@@ -108,15 +108,15 @@ export const portfolioData = {
         },
       },
       {
-        id: "crevexa",
-        title: "Crevexa Media",
-        period: "Aug. 2025 - Sep. 2025",
+        id: "editaxismedia",
+        title: "Edit Axis Media",
+        period: "Aug. 2025 - present",
         description:
           "Developed a high-performance, responsive front-end implementing modern tooling (ESLint, fast refresh) and a clean component structure to optimize developer experience and end-user performance.",
         tech: ["React", "Vite"],
         links: {
           github: "https://github.com/thesujaljaiswal/crevexaOfficialSite",
-          live: "https://crevexa-official-site.vercel.app/",
+          live: "https://www.editaxismedia.in/",
         },
       },
     ],
