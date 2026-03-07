@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f4f1ea;       /* Vintage newsprint off-white */
+  --color-ink: #111111;         /* Deep charcoal ink */
+  
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+@layer base {
+  :root {
+    --background: #f4f1ea;
+    --foreground: #111111;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-serif);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Static grain texture to simulate paper */
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+  }
+
+  img {
+    filter: grayscale(1) contrast(1.1);
+  }
+}
+
+@layer utilities {
+  .nanobanana {
+    @apply bg-[#ead181] text-black px-1 rounded-sm font-bold inline-block mix-blend-multiply;
+    box-shadow: 2px 0 0 #ead181, -2px 0 0 #ead181;
+    transform: rotate(-1deg);
+  }
+  
+  .news-border-heavy {
+    @apply border-y-8 border-t-[#111] border-b-[#111] py-4 my-6;
+  }
+  
+  .news-border-double {
+    @apply border-y-4 border-double border-t-[#111] border-b-[#111] py-2 my-4;
+  }
+
+  .paper-shadow {
+    box-shadow: 5px 5px 0px 0px rgba(17,17,17,1);
+  }
+}
