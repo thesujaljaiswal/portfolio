@@ -1,4 +1,5 @@
 import Section from './Section';
+import TargetCursor from './ui/TargetCursor/TargetCursor';
 
 const skillCategories = [
   {
@@ -26,6 +27,12 @@ const skillCategories = [
 export default function Skills() {
   return (
     <Section id="skills">
+      <TargetCursor 
+        targetSelector=".skill-target"
+        spinDuration={2}
+        hideDefaultCursor={true}
+        parallaxOn={true}
+      />
       <div className="flex items-center gap-4 mb-12">
         <div className="h-px bg-slate-800 flex-1"></div>
         <h2 className="text-3xl font-bold tracking-tight text-slate-100 shrink-0">Technical Skills</h2>
@@ -43,7 +50,7 @@ export default function Skills() {
               {group.skills.map((skill, i) => (
                 <div 
                   key={i} 
-                  className="px-4 py-2 bg-slate-800/50 hover:bg-slate-700/80 border border-slate-700 hover:border-purple-500/50 rounded-lg text-sm text-slate-300 transition-all cursor-default hover:-translate-y-0.5 hover:shadow-[0_5px_15px_-5px_rgba(124,58,237,0.3)] hover:text-purple-300"
+                  className="skill-target px-4 py-2 bg-slate-800/50 hover:bg-slate-700/80 border border-slate-700 hover:border-purple-500/50 rounded-lg text-sm text-slate-300 transition-all cursor-default hover:-translate-y-0.5 hover:shadow-[0_5px_15px_-5px_rgba(124,58,237,0.3)] hover:text-purple-300"
                 >
                   {skill}
                 </div>

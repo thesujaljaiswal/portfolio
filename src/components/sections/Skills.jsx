@@ -1,11 +1,18 @@
 import Section from '../layout/Section';
 import { portfolioData } from '../../data/portfolio';
+import TargetCursor from '../ui/TargetCursor/TargetCursor';
 
 export default function Skills() {
   const { skills } = portfolioData;
 
   return (
     <Section id="skills">
+      <TargetCursor 
+        targetSelector=".skill-target"
+        spinDuration={2}
+        hideDefaultCursor={false}
+        parallaxOn={true}
+      />
       <div className="mt-12 mb-8 bg-[#111] text-[#f4f1ea] px-4 py-2 border-y-4 border-double border-[#111]">
         <h2 className="text-2xl min-[400px]:text-3xl md:text-4xl font-black uppercase tracking-widest text-center">{skills.title}</h2>
       </div>
@@ -21,7 +28,7 @@ export default function Skills() {
               {group.skills.map((skill, i) => (
                 <div 
                   key={i} 
-                  className="px-3 py-1 font-mono text-sm font-bold uppercase border border-dashed border-[#111] bg-white hover:bg-[#ead181] transition-colors cursor-crosshair"
+                  className="skill-target px-3 py-1 font-mono text-sm font-bold uppercase border border-dashed border-[#111] bg-white hover:bg-[#ead181] transition-colors cursor-crosshair"
                 >
                   {skill}
                 </div>
