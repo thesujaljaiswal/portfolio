@@ -96,6 +96,17 @@ export const portfolioData = {
         },
       },
       {
+  "id": "kaalachasma",
+  "title": "Kaala Chasma and Co",
+  "period": "July 2026 - Present",
+  "description": "Developed a responsive e-commerce platform featuring dynamic product cataloging and a streamlined checkout interface to enhance user experience.",
+  "tech": ["React", "Vite", "Tailwind CSS"],
+  "links": {
+    "github": "#",
+    "live": "https://kaala-chasma-and-co.vercel.app/"
+  }
+},
+      {
         id: "newsquest",
         title: "The NewsQuest",
         period: "Aug. 2025 - Oct. 2025",
@@ -149,7 +160,7 @@ export const portfolioData = {
         id: "mca",
         institution:
           "Thakur Institute of Management Studies, Career Development & Research",
-        degree: "Master of Computer Applications (MCA) | CGPA: 7.9 (Pursuing)",
+        degree: "Master of Computer Applications (MCA) | CGPA: 8.30",
         period: "2024 - 2026",
         location: "Mumbai, IN",
       },
