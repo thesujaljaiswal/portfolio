@@ -53,7 +53,7 @@ export const portfolioData = {
           {
             id: "scalix-dev",
             title: "Software Developer (Intern)",
-            period: "Mar. 2026 - Present",
+            period: "Mar. 2026 - May. 2026",
             jobType: "OnSite",
             location: "Dahisar, Mumbai",
             bullets: [
