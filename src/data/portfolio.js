@@ -26,7 +26,7 @@ export const portfolioData = {
       {
         id: "linkedin",
         label: "LinkedIn",
-        url: "https://linkedin.com/in/sujal-jaiswal",
+        url: "https://linkedin.com/in/sujaljaiswal",
         icon: Linkedin,
       },
       {
@@ -41,14 +41,14 @@ export const portfolioData = {
   about: {
     title: "Professional Summary",
     summary:
-      "Curious and self-driven full-stack developer with strong experience in React, REST APIs, and modern web development who enjoys turning ideas into clean, usable products. Known for taking ownership, learning quickly, and building with a strong focus on user experience and simplicity. MCA student based in Mumbai, exploring software engineering.",
+      "Curious and self-driven full-stack developer with strong experience in React, REST APIs, and modern web development who enjoys turning ideas into clean, usable products. Known for taking ownership, learning quickly, and building with a strong focus on user experience and simplicity. MCA student based in Mumbai, actively exploring software engineering opportunities.",
   },
   experience: {
     title: "Experience",
     companies: [
       {
         id: "scalix",
-        name: "Scalix",
+        name: "Scalix Enterprise Solutions LLP",
         roles: [
           {
             id: "scalix-dev",
@@ -57,7 +57,7 @@ export const portfolioData = {
             jobType: "OnSite",
             location: "Dahisar, Mumbai",
             bullets: [
-              "Developing full-stack applications using Next.js and the Frappe framework to build and optimize internal business workflows.",
+              "Built full-stack web applications using Next.js for the frontend alongside NestJS and Frappe framework for backend services and API integrations.",
             ],
           },
         ],
@@ -69,11 +69,11 @@ export const portfolioData = {
           {
             id: "rxgpt-fullstack",
             title: "Full Stack Developer (Intern)",
-            period: "Dec. 2025 - Feb 2026",
+            period: "Dec. 2025 - Feb. 2026",
             jobType: "Remote",
             location: "Bhubaneswar, Odisha",
             bullets: [
-              "Led frontend architecture and UI/UX for a healthcare platform, building scalable React interfaces integrated with Python/Flask APIs and secure JWT authentication within a remote engineering team.",
+              "Led frontend architecture and built scalable React interfaces for a healthcare platform, integrating RESTful services and Git-based remote development workflows.",
             ],
           },
         ],
@@ -83,6 +83,18 @@ export const portfolioData = {
   projects: {
     title: "Academic Projects",
     items: [
+      {
+        id: "kaalachasma",
+        title: "Kaala Chasma & Co",
+        period: "Jul. 2026 - Present",
+        description:
+          "Architected a full-stack event registration and ticketing platform featuring secure authentication, role-based access, dynamic forms, and an interactive analytics dashboard.",
+        tech: ["Next.js", "React", "TypeScript", "MongoDB", "NextAuth", "Tailwind CSS", "Framer Motion", "Recharts"],
+        links: {
+          github: "https://github.com/thesujaljaiswal/Kala-chashma-and-co",
+          live: "https://kaala-chasma-and-co.vercel.app/",
+        },
+      },
       {
         id: "maitripos",
         title: "maitriPOS",
@@ -95,17 +107,6 @@ export const portfolioData = {
           live: "https://maitripos.com/",
         },
       },
-      {
-  "id": "kaalachasma",
-  "title": "Kaala Chasma and Co",
-  "period": "July 2026 - Present",
-  "description": "Developed a responsive e-commerce platform featuring dynamic product cataloging and a streamlined checkout interface to enhance user experience.",
-  "tech": ["React", "Vite", "Tailwind CSS"],
-  "links": {
-    "github": "#",
-    "live": "https://kaala-chasma-and-co.vercel.app/"
-  }
-},
       {
         id: "newsquest",
         title: "The NewsQuest",
@@ -121,7 +122,7 @@ export const portfolioData = {
       {
         id: "editaxismedia",
         title: "Edit Axis Media",
-        period: "Aug. 2025 - present",
+        period: "Aug. 2025 - Present",
         description:
           "Developed a high-performance, responsive front-end implementing modern tooling (ESLint, fast refresh) and a clean component structure to optimize developer experience and end-user performance.",
         tech: ["React", "Vite"],
@@ -136,17 +137,11 @@ export const portfolioData = {
     title: "Education",
     items: [
       {
-        id: "ssc",
-        institution: "S.I.E.S High School",
-        degree: "Secondary School Certificate (SSC) | 62.80%",
-        period: "2009 - 2019",
-        location: "Mumbai, IN",
-      },
-      {
-        id: "hsc",
-        institution: "Rao Junior College of Science",
-        degree: "Higher Secondary Certificate (HSC) | Science | 90.67%",
-        period: "2020 - 2021",
+        id: "mca",
+        institution:
+          "Thakur Institute of Management Studies, Career Development & Research",
+        degree: "Master of Computer Applications (MCA) | CGPA: 8.30",
+        period: "2024 - 2026",
         location: "Mumbai, IN",
       },
       {
@@ -157,11 +152,17 @@ export const portfolioData = {
         location: "Mumbai, IN",
       },
       {
-        id: "mca",
-        institution:
-          "Thakur Institute of Management Studies, Career Development & Research",
-        degree: "Master of Computer Applications (MCA) | CGPA: 8.30",
-        period: "2024 - 2026",
+        id: "hsc",
+        institution: "Rao Junior College of Science",
+        degree: "Higher Secondary Certificate (HSC) | Science | 90.67%",
+        period: "2020 - 2021",
+        location: "Mumbai, IN",
+      },
+      {
+        id: "ssc",
+        institution: "S.I.E.S High School",
+        degree: "Secondary School Certificate (SSC) | 62.80%",
+        period: "2009 - 2019",
         location: "Mumbai, IN",
       },
     ],
@@ -177,12 +178,12 @@ export const portfolioData = {
       {
         id: "frontend",
         category: "Frontend",
-        skills: ["React.js", "Vite", "Tailwind CSS", "Framer Motion"],
+        skills: ["React.js", "Next.js", "Vite", "Tailwind CSS", "Framer Motion"],
       },
       {
         id: "backend",
         category: "Backend",
-        skills: ["Node.js", "Express.js", "ASP.NET", "REST APIs"],
+        skills: ["Node.js", "Express.js", "NestJS", "ASP.NET", "Frappe", "REST APIs"],
       },
       {
         id: "databases",
@@ -199,7 +200,9 @@ export const portfolioData = {
           "Vercel",
           "Render",
           "Figma",
-          "Notion",
+          "Canva",
+          "Photoshop",
+          "Premiere Pro",
         ],
       },
     ],
